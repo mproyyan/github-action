@@ -1,0 +1,14 @@
+name: My first workflow
+run-name: ${{ github.actor }} is learning github actions # github is one of the available context
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  
+  congratulation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print congratulation text
+        run: echo "Congratulation for running your first workflow 🔥"
